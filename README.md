@@ -64,7 +64,3 @@ O projeto SmartSolarGrid atingiu seu objetivo principal de desmistificar o geren
 Mais do que uma inovação técnica, o SmartSolarGrid entrega uma experiência multimodal que promove a eficiência energética, colocando o usuário no controle real do seu consumo e demonstrando o potencial de um gerenciamento de energia mais conectado, inteligente e humano.
 
 ---
-
-## 🔗 Links
-
-* **Repositório do Projeto:** [https://github.com/jumarques03/projeto](https://github.com/jumarques03/projeto)
