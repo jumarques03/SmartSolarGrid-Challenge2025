@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusList = document.getElementById('status-list');
     const batteryForecast = document.getElementById('battery-forecast');
 
-    const baseUrl = 'https://smartsolargrid.onrender.com/site';
+    const baseUrl = 'http://127.0.0.1:8000/site';
 
     // --- FUNÇÕES DA API (GERENCIADOR DE CARGAS) ---
 
@@ -147,5 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
         carregarPrevisaoBateria();
     }
 
-    inicializarEAtualizar();
+    // MUDANÇA 2: A "mágica" da Alexa em poucas linhas
+    inicializarEAtualizar(); // 1. Roda uma vez quando a página abre
+
+    // 2. Roda a cada 5 segundos (esta é a atualização automática)
+    setInterval(inicializarEAtualizar, 5000); // 5000ms = 5 segundos
 });
